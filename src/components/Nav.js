@@ -4,7 +4,7 @@
  * @Author: smile
  * @Date: 2023-05-02 21:58:41
  * @LastEditors: smile
- * @LastEditTime: 2023-06-12 23:04:15
+ * @LastEditTime: 2023-06-12 23:19:04
  */
 
 import {useContext} from "react";
@@ -17,7 +17,7 @@ const publicUrl = process.env.PUBLIC_URL;
 const Nav = () => {
   const {state, dispatch } = useContext(NavContext);
   // console.log('nav state ', state);
-  console.log("process.env.PUBLIC_URLL is : ",process.env.PUBLIC_URLL);
+  console.log("process.env.PUBLIC_URL is : ",process.env.PUBLIC_URL);
 
     return (
         <>
