@@ -4,7 +4,7 @@
  * @Author: smile
  * @Date: 2023-05-02 21:58:41
  * @LastEditors: smile
- * @LastEditTime: 2023-06-12 22:49:20
+ * @LastEditTime: 2023-06-12 22:52:15
  */
 
 import {useContext} from "react";
@@ -12,11 +12,12 @@ import {Link} from 'react-router-dom';
 import NavContext from "../context/NavContext";
 import {navTypes} from "../context/types/NavTypes";
 
-const publicUrl = process.env.PUBLIC_URL;;
+const publicUrl = process.env.PUBLIC_URL;
 
 const Nav = () => {
   const {state, dispatch } = useContext(NavContext);
   // console.log('nav state ', state);
+  console.log("publicUrl is : ",publicUrl);
 
     return (
         <>
