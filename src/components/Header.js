@@ -13,9 +13,9 @@ import {useNavigate} from "react-router-dom";
 
 const Header = ({heading, image, paragraph,children}) =>  {
     const [state] = useState({
-        // video: "/assets/videos/header.mp4",
-        // poster: "/assets/videos/screen.png",
-        // logo: "/assets/images/logo.png",
+        // video: "./assets/videos/header.mp4",
+        // poster: "./assets/videos/screen.png",
+        // logo: "./assets/images/logo.png",
         video: "./assets/videos/header.mp4",
         poster: "./assets/videos/screen.png",
         logo: "./assets/images/logo.png",

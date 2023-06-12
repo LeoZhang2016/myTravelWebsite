@@ -4,7 +4,7 @@ import FootLinks from "./FootLinks";
 
 const Footer = () => {
     const footerStyles = {
-        background: 'url(/assets/footer/footer.jpg)',
+        background: 'url(./assets/footer/footer.jpg)',
         // background: 'url(./footer/footer.jpg)',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',

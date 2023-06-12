@@ -8,7 +8,7 @@ const NotFound = () =>  {
     const [state] =useState({
         heading: 'Oops, 404',
         paragraph: 'Sorry , the page you are looking for does not exists.',
-        image: '/assets/images/404.jpg'
+        image: './assets/images/404.jpg'
     })
     return (
         <>
