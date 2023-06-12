@@ -4,7 +4,7 @@
  * @Author: smile
  * @Date: 2023-04-25 15:59:24
  * @LastEditors: smile
- * @LastEditTime: 2023-06-12 21:14:41
+ * @LastEditTime: 2023-06-12 21:25:24
  */
 import {useState} from 'react';
 import {LazyLoadImage} from "react-lazy-load-image-component";
@@ -16,9 +16,9 @@ const Header = ({heading, image, paragraph,children}) =>  {
         // video: "/assets/videos/header.mp4",
         // poster: "/assets/videos/screen.png",
         // logo: "/assets/images/logo.png",
-        video: "./videos/header.mp4",
-        poster: "./videos/screen.png",
-        logo: "./images/logo.png",
+        video: "./assets/videos/header.mp4",
+        poster: "./assets/videos/screen.png",
+        logo: "./assets/images/logo.png",
     })
     const navigate = useNavigate();
     const goToHome = () => {
