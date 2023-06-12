@@ -6,7 +6,7 @@
  * @LastEditors: smile
  * @LastEditTime: 2023-06-12 22:49:20
  */
-import process from 'process';
+
 import {useContext} from "react";
 import {Link} from 'react-router-dom';
 import NavContext from "../context/NavContext";
