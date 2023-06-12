@@ -1,7 +1,14 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: smile
+ * @Date: 2023-05-05 12:13:18
+ * @LastEditors: smile
+ * @LastEditTime: 2023-06-12 21:43:19
+ */
 import {useState, useContext} from "react";
 import DestinationsContext from "../context/DestinationsContext";
-// import {destinations} from "../data/destinations";
-import {destinations} from "./data/destinations";
+import {destinations} from "../data/destinations";
 import DestinationsList from "./DestinationsList";
 
 const Destinations = () =>  {
