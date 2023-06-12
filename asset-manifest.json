@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TravelFriends/static/css/main.6570fbec.css",
+    "main.js": "/TravelFriends/static/js/main.cc5d8ea9.js",
+    "index.html": "/TravelFriends/index.html",
+    "main.6570fbec.css.map": "/TravelFriends/static/css/main.6570fbec.css.map",
+    "main.cc5d8ea9.js.map": "/TravelFriends/static/js/main.cc5d8ea9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6570fbec.css",
+    "static/js/main.cc5d8ea9.js"
+  ]
+}
