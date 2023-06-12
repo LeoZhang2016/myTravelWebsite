@@ -1,0 +1,116 @@
+@use "../abstracts" as *;
+
+.destinations {
+   margin: 8rem 0;
+  @include responsive(xsmall) {
+    margin: 4rem 0;
+  }
+   &__heading {
+     font-size: 2.8rem;
+     color: $black;
+     font-weight: 500;
+     width: 60%;
+     line-height: 4rem;
+     position: relative;
+     //&::before{
+     //  position: absolute;
+     //  content: "";
+     //  left: 0;
+     //  top: .5rem;
+     //  width: 40%;
+     //  height: .2rem;
+     //  background: $main1;
+     //}
+     @include responsive(large) {
+         width: 100%;
+     }
+     @include responsive(xsmall) {
+       font-size: 2.1rem;
+       line-height: 3.5rem;
+       text-transform:  capitalize;
+     }
+     &::after{
+       position: absolute;
+       content: "";
+       left: 0;
+       bottom: -.5rem;
+       width: 40%;
+       height: .2rem;
+       background: $main1;
+       @include responsive(large) {
+         width: 50%;
+       }
+     }
+   }
+
+  &__paragraph {
+    font-size:  1.6rem;
+    line-height: 2.7rem;
+    color: $silverlight;
+  }
+
+  &__block {
+    margin-top: 6rem;
+    @include responsive(xsmall) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    height: 35rem;
+    border-radius: 1rem;
+    //border: solid 2px black;
+    overflow: hidden;
+    position: relative;
+    &__img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        image-rendering: pixelated;
+      }
+    }
+
+    &__layer {
+    //position($position, $top, $left, $bottom, $right, $width, $height)
+      @include position(absolute, 0, 0, 0, 0, 100%, 100%);
+
+    //align($flex, $justify-content, $align-items, $height)
+      @include   align(flex, null, flex-end, 100%);
+      background: linear-gradient(to bottom, transparent 30%, $black);
+      padding: 2rem;
+      color: $white;
+      &__content {
+        @include   align(flex, null, center, null);
+        &__country {
+           font-size: 1.5rem;
+          margin-left: .4rem;
+        }
+      }
+    }
+    &__info {
+      //position($position, $top, $left, $bottom, $right, $width, $height)
+      @include position(absolute, 0, 0, null, null, 100%, 100%);
+      background: linear-gradient(to right, $main1, $main2);
+      opacity: 0.5;
+      //align($flex, $justify-content, $align-items, $height)
+      @include   align(flex, center, center, null);
+      transition: all .3s linear;
+      transform: scale(0);
+      visibility: hidden;
+      //&__text {
+      //  transform: rotate(-90deg);
+      //}
+    }
+    &:hover &__info {
+      //width: 100%;
+      //transform: rotate(90deg);
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+
+}

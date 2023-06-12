@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts" as *;
+
+.navLayer {
+   //position($position, $top, $left, $bottom, $right, $width, $height)
+   @include  position(fixed, 0, 0, 0, 0, 100%, 100%);
+   background: rgba(0,0,0,.6);
+   z-index: 3;
+}
+.nav {
+   //position($position, $top, $left, $bottom, $right, $width, $height)
+   @include position(fixed, 0, null, 0, 0, 31.2rem, 100%);
+   background: $white;
+   z-index: 4;
+   transition: all .3s linear;
+  //align($flex, $justify-content, $align-items, $height)
+   @include align(flex, center, center, 100%);
+   @include responsive(xsmall) {
+      width: 100%;
+   }
+   &__content {
+      width: 100%;
+      //position: relative;   // 如果 30 行，即 a 不设置 position的话，这里设置为 relative 也可以
+      //  a:before 伪元素会相会于 nav__content 进行定位
+      li {
+         list-style: none;
+         a {
+            text-decoration: none;
+            display: block;
+            padding: 1.5rem 3rem;
+            text-align: right;
+            color: $black;
+            font-size:  1.6rem;
+            font-weight: 400;
+            position: relative;
+            @include responsive(small) {
+               text-align: center;
+            }
+            &::before {
+               //position($position, $top, $left, $bottom, $right, $width , $height)
+               @include position(absolute, 0 , 0, 0, 0, 100%, 100% );
+               background: linear-gradient(to right, $main1, $main2);
+               content: '';
+               z-index: -1;
+               transform: scale(0);
+               transition: all .3s linear;
+            }
+            &:hover:before {
+               transform: scale(1);
+            }
+            &:hover {
+               color:white;
+            }
+         }
+      }
+   }
+   &--close {   // 取到 选择器的值就可以了
+      transform: translateX(100%);
+   }
+   &--open {
+      transform: translateX(0%);
+   }
+}
