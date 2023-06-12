@@ -1,6 +1,7 @@
 import {useState, useContext} from "react";
 import DestinationsContext from "../context/DestinationsContext";
-import {destinations} from "../data/destinations";
+// import {destinations} from "../data/destinations";
+import {destinations} from "./data/destinations";
 import DestinationsList from "./DestinationsList";
 
 const Destinations = () =>  {
