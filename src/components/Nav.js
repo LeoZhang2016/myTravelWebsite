@@ -22,13 +22,13 @@ const Nav = () => {
                     <div className={state.navDisplay ? 'nav nav--open' : 'nav nav--close'}>
                         <div className="nav__content">
                             <li>
-                                <Link to={"../"}>Home</Link>
+                                <Link to={""}>Home</Link>
                             </li>
                             <li>
-                                <Link to={"../about"}>About</Link>
+                                <Link to={"about"}>About</Link>
                             </li>
                             <li>
-                                <Link to={"../contact"}>Contact</Link>
+                                <Link to={"contact"}>Contact</Link>
                             </li>
                         </div>
                     </div>
