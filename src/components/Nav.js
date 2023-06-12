@@ -4,7 +4,7 @@
  * @Author: smile
  * @Date: 2023-05-02 21:58:41
  * @LastEditors: smile
- * @LastEditTime: 2023-06-12 22:20:37
+ * @LastEditTime: 2023-06-12 22:27:31
  */
 import {useContext} from "react";
 import {Link} from 'react-router-dom';
@@ -22,13 +22,13 @@ const Nav = () => {
                     <div className={state.navDisplay ? 'nav nav--open' : 'nav nav--close'}>
                         <div className="nav__content">
                             <li>
-                                <Link to={"/"}>Home</Link>
+                                <Link to={"./"}>Home</Link>
                             </li>
                             <li>
-                                <Link to={"/about"}>About</Link>
+                                <Link to={"./about"}>About</Link>
                             </li>
                             <li>
-                                <Link to={"/contact"}>Contact</Link>
+                                <Link to={"./contact"}>Contact</Link>
                             </li>
                         </div>
                     </div>
