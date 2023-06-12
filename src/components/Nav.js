@@ -17,7 +17,7 @@ const publicUrl = process.env.PUBLIC_URL;
 const Nav = () => {
   const {state, dispatch } = useContext(NavContext);
   // console.log('nav state ', state);
-  console.log("publicUrl is : ",publicUrl);
+  console.log("publicUrl is : ",process.env.PUBLIC_URL);
 
     return (
         <>
